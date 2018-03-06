@@ -1,0 +1,8 @@
+多线程:
+Java多线程中调用wait() 和 sleep()方法有什么不同？
+Java程序中wait和sleep都会造成某种形式的暂停，它们可以满足不同的需要。
+
+wait存在于Object类中；sleep存在于Thread类中。
+wait会让出CPU资源以及释放锁；sleep只会释放CPU资源。
+wait只能在同步块中使用；sleep没这限制。
+wait需要notify（或 notifyAll）唤醒，进入等锁状态；sleep到指定时间便会自动恢复到运行状态。
